@@ -1,32 +1,93 @@
-/* Complete CSS variables, reset styles, navbar, sections, hero, footer, and responsive design */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --border-radius: 4px;
 }
 
-body {
+/* Reset */
+* {
     margin: 0;
-    font-family: var(--font-family);
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Navbar styles */
+/* Typography */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
 .navbar {
     background-color: var(--primary-color);
     padding: 1rem;
 }
 
-/* Footer styles */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem 0;
+}
+
+/* Hero */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
 .footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
 }
-/* Responsive design */
+
+/* Buttons */
+.button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Forms */
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+    }
+    
+    .hero {
+        height: 250px;
     }
 }
