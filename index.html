@@ -3,36 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barter - Share Skills, Build Together</title>
     <link rel="stylesheet" href="css/main.css">
-    <title>Barter Platform</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
-    <nav>
-        <h1>Barter Platform</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="signup.html">Signup</a></li>
-        </ul>
+    <!-- Navbar (Logged-out) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-logo">
+                    <h2>Barter</h2>
+                </div>
+                <div class="navbar-menu" id="navbarMenu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <button class="btn btn-outline btn-sm" onclick="window.location.href='login.html'">Login</button>
+                    <button class="btn btn-primary btn-sm" onclick="window.location.href='signup.html'">Sign Up</button>
+                </div>
+                <button class="navbar-toggle" id="navbarToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </nav>
-    <header class="hero">
-        <h2>Welcome to the Barter Platform</h2>
-        <p>Trade goods and services with ease!</p>
-    </header>
-    <section class="features">
-        <h3>Features</h3>
-        <ul>
-            <li>Easy to use</li>
-            <li>Secure transactions</li>
-            <li>Wide range of categories</li>
-        </ul>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Share Skills, Build Together</h1>
+                <p class="hero-subtitle">Connect with talented individuals in Mangalore, exchange skills, and collaborate on amazing projects. Join our community of professionals, skilled workers, and service providers.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='signup.html'">Get Started</button>
+                    <button class="btn btn-outline btn-lg" onclick="window.location.href='search.html'">Find Collaborators</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="how-it-works">
-        <h3>How it Works</h3>
-        <p>Simply list your items, and start trading!</p>
+
+    <!-- Why Barter Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Barter?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Matchmaking</h3>
+                    <p class="feature-description">Our intelligent system connects you with the perfect collaborators based on skills, location, and project needs in Mangalore.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Chat</h3>
+                    <p class="feature-description">Communicate instantly with potential collaborators through our built-in messaging system.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Project Collaboration</h3>
+                    <p class="feature-description">Work together seamlessly on projects with built-in collaboration tools and resource sharing.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Skill Exchange</h3>
+                    <p class="feature-description">Trade your expertise for skills you need. Connect with white, grey, and blue collar professionals.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Verified Profiles</h3>
+                    <p class="feature-description">Connect with confidence. Verify your profile with GitHub and LinkedIn for increased trust.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-yellow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Secure Payments</h3>
+                    <p class="feature-description">Need to pay for services? Our secure payment system supports multiple payment methods including UPI.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2023 Barter Platform</p>
+
+    <!-- How It Works Section -->
+    <section class="section section-gray" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number step-number-blue">1</div>
+                    <h3 class="step-title">Create Profile</h3>
+                    <p class="step-description">Sign up and showcase your skills, resources, and what you're looking to learn or trade.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-number-green">2</div>
+                    <h3 class="step-title">Find Collaborators</h3>
+                    <p class="step-description">Search and discover people with complementary skills who are looking to collaborate.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-number-blue">3</div>
+                    <h3 class="step-title">Connect & Collaborate</h3>
+                    <p class="step-description">Send requests, chat in real-time, and start working together on exciting projects.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number step-number-green">4</div>
+                    <h3 class="step-title">Exchange Skills</h3>
+                    <p class="step-description">Trade your expertise, build amazing things, and grow your skill set together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Collaborating?</h2>
+                <p class="cta-subtitle">Join our community of skilled professionals in Mangalore and start exchanging expertise today. It's free to get started!</p>
+                <button class="btn btn-primary btn-lg" onclick="window.location.href='signup.html'">Sign Up Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Barter - Mangalore. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
